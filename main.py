@@ -60,5 +60,5 @@ for i in range(10):
     plt.imshow(X_test[i].cpu().reshape(28, 28), cmap="gray")
     plt.axis("off")
     plt.show()
-    print(f"Predicted value: {torch.argmax(test_predictions, dim=1)[i]}")
+    print(f"Predicted value: {torch.argmax(test_predictions, dim=1)[i]}, Correct value: {y_test[i]}")
     plt.close()
